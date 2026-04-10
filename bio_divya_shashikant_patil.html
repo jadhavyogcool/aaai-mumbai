@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAAI Mumbai Chapter | Member Biography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .bio-page-header {
+            text-align: center;
+            background: var(--background-light);
+            padding: 4rem 2rem 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .bio-page-photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .bio-page-content {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        /* Flexbox for details on bio page */
+        .bio-details-cluster {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .bio-details-cluster p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2rem;
+        }
+        .bio-details-cluster strong {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+        .bio-details-cluster a {
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">AAAI<span>Mumbai</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html" class="active">Members</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="bio-page-header">
+        <img src="images/members/divya_shashikant_patil.png" alt="Photo of Divya Shashikant Patil" class="bio-page-photo">
+        <h1 style="color: var(--primary-color); margin-bottom: 0.5rem;">Divya Shashikant Patil</h1>
+        
+        <div class="bio-details-cluster">
+            <p><strong>Member ID:</strong> <span class="badge">Null</span></p>
+                        <p><strong>Affiliation:</strong> TATA Technologies</p>
+                        <p><strong>Phone:</strong> Null</p>
+                        <p><strong>Email:</strong> <a href="mailto:divya4panvel@gmail.com">divya4panvel@gmail.com</a></p>
+        </div>
+    </div>
+    
+    <div class="bio-page-content">
+        <h2 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; display: inline-block;">Biography</h2>
+        <p style="margin-top: 1.5rem;">B.Tech Bioinformatics And Data Science 2025 Graduate. Working as a Consultant at TATA Technologies.</p>
+        <div style="margin-top: 4rem; text-align: center;">
+            <a href="members.html" class="btn btn-primary">&larr; Back to Members</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; color: white; margin-bottom: 1rem;">AAAI<span style="color: var(--accent-color);">Mumbai</span></div>
+            <p>&copy; 2026 AAAI Mumbai Chapter. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

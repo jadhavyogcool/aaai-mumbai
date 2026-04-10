@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAAI Mumbai Chapter | Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .event-card {
+            display: flex;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+        .event-date {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            min-width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .event-date .day {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .event-details {
+            padding: 2rem;
+            flex: 1;
+        }
+        .event-tag {
+            background-color: var(--background-light);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        @media (max-width: 768px) {
+            .event-card {
+                flex-direction: column;
+            }
+            .event-date {
+                padding: 1rem;
+                flex-direction: row;
+                gap: 1rem;
+            }
+            .event-date .day {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                AAAI<span>Mumbai</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding: 4rem 0; text-align: left; background: var(--accent-color);">
+        <div class="container">
+            <h1>Events & Calendar</h1>
+            <p style="margin: 0; max-width: 600px;">Join us for interactive workshops, symposiums, and networking events aimed at advancing AI in the Mumbai region.</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div style="margin-bottom: 3rem;">
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; color: white; margin-bottom: 1rem;">
+                AAAI<span style="color: var(--accent-color);">Mumbai</span>
+            </div>
+            <p>&copy; 2026 AAAI Mumbai Chapter. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
